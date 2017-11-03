@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="xu&#39;Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Next主题优化">
+<meta property="og:url" content="http://yoursite.com/2017/11/03/Next主题优化/index.html">
 <meta property="og:site_name" content="xu&#39;Blog">
+<meta property="og:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-03T12:49:08.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xu&#39;Blog">
+<meta name="twitter:title" content="Next主题优化">
+<meta name="twitter:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/03/Next主题优化/"/>
 
 
 
 
 
-  <title>xu'Blog</title>
+  <title>Next主题优化 | xu'Blog</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/03/Next主题优化/" itemprop="url">Next主题优化</a></h1>
+          <h1 class="post-title" itemprop="name headline">Next主题优化</h1>
         
 
         <div class="post-meta">
@@ -308,19 +309,20 @@
       
 
       
-        
-          <h2 id="1-Hexo之next主题设置首页不显示全文-只显示预览"><a href="#1-Hexo之next主题设置首页不显示全文-只显示预览" class="headerlink" title="1. Hexo之next主题设置首页不显示全文(只显示预览)"></a>1. Hexo之next主题设置首页不显示全文(只显示预览)</h2><ul>
+        <h2 id="1-Hexo之next主题设置首页不显示全文-只显示预览"><a href="#1-Hexo之next主题设置首页不显示全文-只显示预览" class="headerlink" title="1. Hexo之next主题设置首页不显示全文(只显示预览)"></a>1. Hexo之next主题设置首页不显示全文(只显示预览)</h2><ul>
 <li>入hexo博客项目的themes/next目录</li>
 <li>用文本编辑器打开_config.yml文件</li>
-<li>搜索”auto_excerpt”,找到如下部分：<font size="2"><br>&gt; # Automatically Excerpt. Not recommand.<br><br>&gt; # Please use
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/03/Next主题优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<li>搜索”auto_excerpt”,找到如下部分：<font size="2"><br>&gt; # Automatically Excerpt. Not recommand.<br><br>&gt; # Please use <a id="more"></a> in the post to control excerpt accurately.<br>&gt;auto_excerpt:<br><br>&gt;enable: false<br><br>&gt;length: 150<br><br></font></li>
+<li>把enable改为对应的false改为true就完成了</li>
+</ul>
+<p><font color="#F08080" size="2">注：下面的length参数对应的是文章预览的文本长度，可以自己设置。</font>  <br>  </p>
+<h2 id="2-头像设置"><a href="#2-头像设置" class="headerlink" title="2. 头像设置"></a>2. 头像设置</h2><p>编辑 站点配置文件，新增字段 avatar， 值设置成头像的链接地址。<br>avatar: <a href="http://xxxx.jpg" target="_blank" rel="external">http://xxxx.jpg</a></p>
+<h2 id="3-添加页面"><a href="#3-添加页面" class="headerlink" title="3. 添加页面"></a>3. 添加页面</h2><p>添加<code>关于</code>页面</p>
+<blockquote>
+<p><code>hexo new page &quot;about&quot;</code></p>
+</blockquote>
+<p>在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉.</p>
+
       
     </div>
     
@@ -337,160 +339,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/31/MyBlog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="milubaize">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xu'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/31/MyBlog/" itemprop="url">学习Markdown</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T21:41:55+08:00">
-                2017-10-31
-              </time>
+              <a href="/2017/10/31/MyBlog/" rel="next" title="学习Markdown">
+                <i class="fa fa-chevron-left"></i> 学习Markdown
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown基础/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown基础</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          什么是 MarkdownMarkdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/31/MyBlog/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -500,136 +370,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/31/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="milubaize">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xu'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/31/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T18:50:51+08:00">
-                2017-10-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/31/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -637,6 +382,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -657,8 +406,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -711,6 +469,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Hexo之next主题设置首页不显示全文-只显示预览"><span class="nav-number">1.</span> <span class="nav-text">1. Hexo之next主题设置首页不显示全文(只显示预览)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-头像设置"><span class="nav-number">2.</span> <span class="nav-text">2. 头像设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-添加页面"><span class="nav-number">3.</span> <span class="nav-text">3. 添加页面</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -851,6 +625,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
