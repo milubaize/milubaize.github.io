@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
+<meta name="description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand. # Please use">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Next主题优化">
 <meta property="og:url" content="http://yoursite.com/2017/11/03/Next主题优化/index.html">
 <meta property="og:site_name" content="xu&#39;Blog">
-<meta property="og:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
+<meta property="og:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand. # Please use">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-03T12:49:08.279Z">
+<meta property="og:updated_time" content="2017-11-03T12:56:57.717Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题优化">
-<meta name="twitter:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：&amp;gt; # Automatically Excerpt. Not recommand.&amp;gt; # Please use">
+<meta name="twitter:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand. # Please use">
 
 
 
@@ -312,15 +312,23 @@
         <h2 id="1-Hexo之next主题设置首页不显示全文-只显示预览"><a href="#1-Hexo之next主题设置首页不显示全文-只显示预览" class="headerlink" title="1. Hexo之next主题设置首页不显示全文(只显示预览)"></a>1. Hexo之next主题设置首页不显示全文(只显示预览)</h2><ul>
 <li>入hexo博客项目的themes/next目录</li>
 <li>用文本编辑器打开_config.yml文件</li>
-<li>搜索”auto_excerpt”,找到如下部分：<font size="2"><br>&gt; # Automatically Excerpt. Not recommand.<br><br>&gt; # Please use <a id="more"></a> in the post to control excerpt accurately.<br>&gt;auto_excerpt:<br><br>&gt;enable: false<br><br>&gt;length: 150<br><br></font></li>
+<li>搜索”auto_excerpt”,找到如下部分：</li>
+</ul>
+<pre>
+# Automatically Excerpt. Not recommand.
+# Please use <a id="more"></a> in the post to control excerpt accurately.
+ auto_excerpt:
+ enable: false
+ length: 150
+ </pre> 
+
+<ul>
 <li>把enable改为对应的false改为true就完成了</li>
 </ul>
-<p><font color="#F08080" size="2">注：下面的length参数对应的是文章预览的文本长度，可以自己设置。</font>  <br>  </p>
+<p><font color="#F08080" size="">注：下面的length参数对应的是文章预览的文本长度，可以自己设置。</font>  <br>  </p>
 <h2 id="2-头像设置"><a href="#2-头像设置" class="headerlink" title="2. 头像设置"></a>2. 头像设置</h2><p>编辑 站点配置文件，新增字段 avatar， 值设置成头像的链接地址。<br>avatar: <a href="http://xxxx.jpg" target="_blank" rel="external">http://xxxx.jpg</a></p>
 <h2 id="3-添加页面"><a href="#3-添加页面" class="headerlink" title="3. 添加页面"></a>3. 添加页面</h2><p>添加<code>关于</code>页面</p>
-<blockquote>
 <p><code>hexo new page &quot;about&quot;</code></p>
-</blockquote>
 <p>在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉.</p>
 
       
