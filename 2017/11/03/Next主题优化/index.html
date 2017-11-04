@@ -12,17 +12,17 @@
   <link rel="shortcut icon" href="/">
   <link rel="alternate" href="/atom.xml" title="xu'Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use">
+  <meta name="description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use &amp;lt;!-- more --&amp;gt; in the post &amp;gt; to cont">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Next主题优化">
 <meta property="og:url" content="http://yoursite.com/2017/11/03/Next主题优化/index.html">
 <meta property="og:site_name" content="xu&#39;Blog">
-<meta property="og:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use">
+<meta property="og:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use &amp;lt;!-- more --&amp;gt; in the post &amp;gt; to cont">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-04T14:41:31.157Z">
+<meta property="og:updated_time" content="2017-11-04T14:47:04.186Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题优化">
-<meta name="twitter:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use">
+<meta name="twitter:description" content="1. Hexo之next主题设置首页不显示全文(只显示预览) 入hexo博客项目的themes/next目录 用文本编辑器打开_config.yml文件 搜索”auto_excerpt”,找到如下部分：   # Automatically Excerpt. Not recommand.# Please use &amp;lt;!-- more --&amp;gt; in the post &amp;gt; to cont">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -158,7 +158,7 @@
 <li>搜索”auto_excerpt”,找到如下部分：</li>
 </ul>
 <blockquote>
-<p># Automatically Excerpt. Not recommand.<br># Please use <a id="more"></a> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150</p>
+<p># Automatically Excerpt. Not recommand.<br># Please use <code>&lt;!-- more --&gt;</code> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150<br> <a id="more"></a></p>
 </blockquote>
 <ul>
 <li>把enable改为对应的false改为true就完成了</li>

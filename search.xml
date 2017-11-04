@@ -11,7 +11,7 @@
 <li>搜索”auto_excerpt”,找到如下部分：</li>
 </ul>
 <blockquote>
-<p># Automatically Excerpt. Not recommand.<br># Please use <a id="more"></a> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150</p>
+<p># Automatically Excerpt. Not recommand.<br># Please use <code>&lt;!-- more --&gt;</code> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150<br> <a id="more"></a></p>
 </blockquote>
 <ul>
 <li>把enable改为对应的false改为true就完成了</li>
@@ -33,7 +33,7 @@
     <entry>
       <title><![CDATA[学习Markdown]]></title>
       <url>/2017/10/31/MyBlog/</url>
-      <content type="html"><![CDATA[<h1 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h1><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字。</p>
+      <content type="html"><![CDATA[<h1 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h1><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字。<br><a id="more"></a></p>
 <h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p>
 <p>而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：</p>
 <p>代码：</p>
@@ -73,10 +73,10 @@
 <h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用``` bash …..```</p>
 <p>例如</p>
 <blockquote>
-<p>``` bash<br>hexo d -g<br>``` </p>
+<p>``` bash<br>$ hexo d -g<br>``` </p>
 </blockquote>
 <p>效果</p>
-<pre><code class="bash">hexo d -g
+<pre><code class="bash">$ hexo d -g
 </code></pre>
 ]]></content>
       
@@ -94,7 +94,7 @@
       <url>/2017/10/31/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br><a id="more"></a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
