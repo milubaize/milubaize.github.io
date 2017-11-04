@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>xu&#39;Blog</title>
+  
+  <subtitle>于千万人之间遇见你</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-11-04T11:55:53.292Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>milubaize</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Next主题优化</title>
+    <link href="http://yoursite.com/2017/11/03/Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
+    <id>http://yoursite.com/2017/11/03/Next主题优化/</id>
+    <published>2017-11-03T12:08:29.000Z</published>
+    <updated>2017-11-04T11:55:53.292Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-Hexo之next主题设置首页不显示全文-只显示预览"><a href="#1-Hexo之next主题设置首页不显示全文-只显示预览" class="headerlink" title="1. Hexo之next主题设置首页不显示全文(只显示预览)"></a>1. Hexo之next主题设置首页不显示全文(只显示预览)</h2><ul><li>入hexo博客项目的themes/next目录</li><li>用文本编辑器打开_config.yml文件</li><li>搜索”auto_excerpt”,找到如下部分：</li></ul><blockquote><p># Automatically Excerpt. Not recommand.<br># Please use <a id="more"></a> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150</p></blockquote><ul><li>把enable改为对应的false改为true就完成了</li></ul><p><font color="#F08080" size="">注：下面的length参数对应的是文章预览的文本长度，可以自己设置。</font>  <br>  </p><h2 id="2-头像设置"><a href="#2-头像设置" class="headerlink" title="2. 头像设置"></a>2. 头像设置</h2><p>编辑 站点配置文件，新增字段 avatar， 值设置成头像的链接地址。<br>avatar: <a href="http://xxxx.jpg" target="_blank" rel="external">http://xxxx.jpg</a></p><h2 id="3-添加页面"><a href="#3-添加页面" class="headerlink" title="3. 添加页面"></a>3. 添加页面</h2><p>添加<code>关于</code>页面</p><pre><code class="bash">hexo new page <span class="string">"about"</span></code></pre><p>在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-Hexo之next主题设置首页不显示全文-只显示预览&quot;&gt;&lt;a href=&quot;#1-Hexo之next主题设置首页不显示全文-只显示预览&quot; class=&quot;headerlink&quot; title=&quot;1. Hexo之next主题设置首页不显示全文(只显示预览)&quot;&gt;&lt;/a&gt;1. Hexo之next主题设置首页不显示全文(只显示预览)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;入hexo博客项目的themes/next目录&lt;/li&gt;
+&lt;li&gt;用文本编辑器打开_config.yml文件&lt;/li&gt;
+&lt;li&gt;搜索”auto_excerpt”,找到如下部分：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# Automatically Excerpt. Not recommand.&lt;br&gt;# Please use
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习Markdown</title>
+    <link href="http://yoursite.com/2017/10/31/MyBlog/"/>
+    <id>http://yoursite.com/2017/10/31/MyBlog/</id>
+    <published>2017-10-31T13:41:55.000Z</published>
+    <updated>2017-11-04T11:55:51.448Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h1><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字。</p><h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p><p>而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：</p><p>代码：</p><pre><code># 第一级标题   `&lt;h1&gt;`## 第二级标题    `&lt;h2&gt;`### 第三级标题     `&lt;h3&gt;`</code></pre><p> 效果：</p><blockquote><h1 id="第一级标题-lt-h1-gt"><a href="#第一级标题-lt-h1-gt" class="headerlink" title="第一级标题   &lt;h1&gt;"></a>第一级标题   <code>&lt;h1&gt;</code></h1><h2 id="第二级标题-lt-h2-gt"><a href="#第二级标题-lt-h2-gt" class="headerlink" title="第二级标题   &lt;h2&gt;"></a>第二级标题   <code>&lt;h2&gt;</code></h2><h3 id="第三级标题-lt-h3-gt"><a href="#第三级标题-lt-h3-gt" class="headerlink" title="第三级标题    &lt;h3&gt;"></a>第三级标题    <code>&lt;h3&gt;</code></h3></blockquote><h2 id="二-引用"><a href="#二-引用" class="headerlink" title="二.引用"></a>二.引用</h2><p>引用需要在被引用的文本前加上&gt;符号。</p><p>代码：</p><pre><code>&gt; 第一行   &gt; 第二行    &gt; 第三行     </code></pre><p> 效果：</p><blockquote><p> 第一行  </p><p> 第二行   </p><p> 第三行   </p></blockquote><h3 id="引用的多层嵌套"><a href="#引用的多层嵌套" class="headerlink" title="引用的多层嵌套"></a>引用的多层嵌套</h3><p>代码：</p><pre><code>&gt;&gt;&gt; 请问 Markdwon 怎么用啊？  &gt;&gt;&gt;&gt; 自己看百度！ &gt;&gt; 第一行     </code></pre><p><font color="#F08080" size="2">注：此处代码部分加\转义可以让符号原样显示，不被解析成对应的markdown语法</font>  <br><br>效果：</p><blockquote><blockquote><blockquote><p>请问 Markdwon 怎么用啊？  </p></blockquote><p>自己看百度！ </p></blockquote><p>不会啊！ </p></blockquote><h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用``` bash …..```</p><p>例如</p><blockquote><p>``` bash<br>hexo d -g<br>``` </p></blockquote><p>效果</p><pre><code class="bash">hexo d -g</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是-Markdown&quot;&gt;&lt;a href=&quot;#什么是-Markdown&quot; class=&quot;headerlink&quot; title=&quot;什么是 Markdown&quot;&gt;&lt;/a&gt;什么是 Markdown&lt;/h1&gt;&lt;p&gt;Markdown 是一种方便记忆、书写的纯文本标记语言，用户
+      
+    
+    </summary>
+    
+      <category term="Markdown基础" scheme="http://yoursite.com/categories/Markdown%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/10/31/hello-world/"/>
+    <id>http://yoursite.com/2017/10/31/hello-world/</id>
+    <published>2017-10-31T10:50:51.096Z</published>
+    <updated>2017-10-31T10:50:51.096Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
