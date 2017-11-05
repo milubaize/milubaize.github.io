@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-04T14:51:59.117Z</updated>
+  <updated>2017-11-05T11:35:42.668Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java从零开始</title>
+    <link href="http://yoursite.com/2017/11/05/Java%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/"/>
+    <id>http://yoursite.com/2017/11/05/Java从零开始/</id>
+    <published>2017-11-05T11:15:51.000Z</published>
+    <updated>2017-11-05T11:35:42.668Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近一直不在学习状态，决定恶补Java 基础</p><h2 id="1-什么是面向对象编程"><a href="#1-什么是面向对象编程" class="headerlink" title="1. 什么是面向对象编程"></a>1. 什么是面向对象编程</h2><p> 说到面向对象，就要提起面向过程，那么它们有什么区别呢？</p><h3 id="1-1-面向过程"><a href="#1-1-面向过程" class="headerlink" title="1.1 面向过程"></a>1.1 面向过程</h3><p> 概念:分析解决问题的所需要的步骤，然后用函数一步一步的调用实现，就是把一个事务分解成一个个步骤。</p><p>例如：把大象放入冰箱这件事情</p><blockquote><p>1.打开冰箱</p><p>2.放入大象</p><p>3.关闭冰箱</p></blockquote><p>这就是<code>面向过程</code>编程，思想是注重做事的过程。</p><h3 id="1-2-面向对象"><a href="#1-2-面向对象" class="headerlink" title="1.2 面向对象"></a>1.2 面向对象</h3><p>概念:<code>OOP（Object Oriented Programming）</code>面向对象关注的是哪些事物有什么样的功能，强调的是具体的事物</p><p>例如：同样的把大象放入冰箱这件事情</p><p>分析：会抽象出一类具有某种相同属性和行为的事物</p><blockquote><p><code>冰箱</code>：具体功能有开冰箱，关闭冰箱</p><p><code>大象</code>：走路</p></blockquote><p>同一件事，面向对象关注的是谁有打开冰箱关闭冰箱的功能，谁有进入冰箱的功能。</p><p>总结：<font color="#F08080" size=""></font></p><p>面向对象是以功能来划分，而不是步骤。</p><p>编程就是模拟现实生活，我们使用面向对象的思想可以认为<code>万物皆对象</code>。<br>  <br>  </p><h2 id="2-类的概念"><a href="#2-类的概念" class="headerlink" title="2. 类的概念"></a>2. 类的概念</h2><p>在Java中，我们把具有相同属性或者行为的事物抽象成一类。比如猫是一类，是一个概念，并没有具体指某只猫，类中一个具体的对象可以是波斯猫，折耳猫等等</p><p>类和对象的关系：就像是模版和样本的关系，通过一个模板可以创建多个当前模板下的样例。</p><blockquote><font color="#F08080" size="">注意：类是概念，对象才是真正的实例。</font></blockquote><p>定义类的语法：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">class 类名&#123;</div><div class="line"></div><div class="line">属性</div><div class="line"></div><div class="line">方法()</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近一直不在学习状态，决定恶补Java 基础&lt;/p&gt;
+&lt;h2 id=&quot;1-什么是面向对象编程&quot;&gt;&lt;a href=&quot;#1-什么是面向对象编程&quot; class=&quot;headerlink&quot; title=&quot;1. 什么是面向对象编程&quot;&gt;&lt;/a&gt;1. 什么是面向对象编程&lt;/h2&gt;&lt;p&gt; 说
+      
+    
+    </summary>
+    
+      <category term="Java 基础" scheme="http://yoursite.com/categories/Java-%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Next主题优化</title>
     <link href="http://yoursite.com/2017/11/03/Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
     <id>http://yoursite.com/2017/11/03/Next主题优化/</id>
     <published>2017-11-03T12:08:29.000Z</published>
-    <updated>2017-11-04T14:51:59.117Z</updated>
+    <updated>2017-11-05T11:15:21.686Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-Hexo之next主题设置首页不显示全文-只显示预览"><a href="#1-Hexo之next主题设置首页不显示全文-只显示预览" class="headerlink" title="1. Hexo之next主题设置首页不显示全文(只显示预览)"></a>1. Hexo之next主题设置首页不显示全文(只显示预览)</h2><ul><li>入hexo博客项目的themes/next目录</li><li>用文本编辑器打开_config.yml文件</li><li>搜索”auto_excerpt”,找到如下部分：</li></ul><blockquote><p># Automatically Excerpt. Not recommand.<br># Please use <code>&lt;!-- more --&gt;</code> in the post &gt; to control excerpt accurately.<br>   auto_excerpt:<br>   enable: false<br>   length: 150<br> <a id="more"></a></p></blockquote><ul><li>把enable改为对应的false改为true就完成了</li></ul><p><font color="#F08080" size="">注：下面的length参数对应的是文章预览的文本长度，可以自己设置。</font>  <br>  </p><h2 id="2-头像设置"><a href="#2-头像设置" class="headerlink" title="2. 头像设置"></a>2. 头像设置</h2><p>编辑 站点配置文件，新增字段 avatar， 值设置成头像的链接地址。</p><blockquote><p>avatar: <a href="http://xxxx.jpg" target="_blank" rel="external">http://xxxx.jpg</a></p></blockquote><h2 id="3-添加页面"><a href="#3-添加页面" class="headerlink" title="3. 添加页面"></a>3. 添加页面</h2><p>添加<code>关于</code>页面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"about"</span></div></pre></td></tr></table></figure><p>在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉.</p>]]></content>
     
@@ -36,6 +60,8 @@
 &lt;p&gt;# Automatically Excerpt. Not recommand.&lt;br&gt;# Please use &lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt; in the post &amp;gt; to control excerpt accurately.&lt;br&gt;   auto_excerpt:&lt;br&gt;   enable: false&lt;br&gt;   length: 150&lt;br&gt;
     
     </summary>
+    
+      <category term="Hexo主题相关" scheme="http://yoursite.com/categories/Hexo%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3/"/>
     
     
   </entry>
