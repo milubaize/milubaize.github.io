@@ -22,8 +22,7 @@
 <p>avatar: <a href="http://xxxx.jpg" target="_blank" rel="external">http://xxxx.jpg</a></p>
 </blockquote>
 <h2 id="3-添加页面"><a href="#3-添加页面" class="headerlink" title="3. 添加页面"></a>3. 添加页面</h2><p>添加<code>关于</code>页面</p>
-<pre><code class="bash">$ hexo new page <span class="string">"about"</span>
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"about"</span></div></pre></td></tr></table></figure>
 <p>在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉.</p>
 ]]></content>
       
@@ -70,14 +69,7 @@
 </blockquote>
 <p>不会啊！ </p>
 </blockquote>
-<h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用``` bash …..```</p>
-<p>例如</p>
-<blockquote>
-<p>``` bash<br>$ hexo d -g<br>``` </p>
-</blockquote>
-<p>效果</p>
-<pre><code class="bash">$ hexo d -g
-</code></pre>
+<h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用 \<figure class="highlight bash"><figcaption><span>.....```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">例如</div><div class="line">&gt; \``` bash</div><div class="line">&gt; $ hexo d -g</div><div class="line">&gt; \```  </div><div class="line">  </div><div class="line">效果</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo d -g</div></pre></td></tr></table></figure></p>
 ]]></content>
       
         <categories>
