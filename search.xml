@@ -3,6 +3,30 @@
   
     
     <entry>
+      <title><![CDATA[Java从零开始（二）]]></title>
+      <url>/2017/11/06/Java%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B-1/</url>
+      <content type="html"><![CDATA[<p>今天学习一下Java的三大特性</p>
+<h2 id="1-多态性"><a href="#1-多态性" class="headerlink" title="1. 多态性"></a>1. 多态性</h2><p>多态性的存在有三个前提：</p>
+<ul>
+<li>要有继承关系</li>
+<li>子类重写父类的方法</li>
+<li>父类引用指向子类对象</li>
+</ul>
+<p>首先我们定义两个类，一个父类Animal，一个子类Cat</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">class Animal&#123;</div><div class="line">    int num = 10;</div><div class="line">    static int age = 20;</div><div class="line">    public void <span class="function"><span class="title">eat</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"动物在吃饭"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public void <span class="function"><span class="title">run</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"动物在跑步"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public void <span class="function"><span class="title">sleep</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"动物在睡觉"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>子类Cat<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">class Cat extends Animal&#123;</div><div class="line">    int num = 80;</div><div class="line">    static int age = 90;</div><div class="line">    String name=<span class="string">"tomcat"</span></div><div class="line">    public void <span class="function"><span class="title">eat</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"猫在吃饭"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public void <span class="function"><span class="title">run</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"猫在跑步"</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public void <span class="function"><span class="title">sleep</span></span>()&#123;</div><div class="line">        System.out.println(<span class="string">"猫在睡觉"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Java 基础 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Java从零开始(一)]]></title>
       <url>/2017/11/05/Java%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/</url>
       <content type="html"><![CDATA[<p>最近一直不在学习状态，决定恶补Java 基础</p>
@@ -47,7 +71,9 @@
 </li>
 <li>存储的位置：存储在栈内存中。</li>
 <li>默认值：无，局部变量必须赋值。</li>
-<li>生命周期：所属的大括号结束就消失。<h3 id="3-2-成员变量（即类的属性）"><a href="#3-2-成员变量（即类的属性）" class="headerlink" title="3.2 成员变量（即类的属性）"></a>3.2 成员变量（即类的属性）</h3></li>
+<li>生命周期：所属的大括号结束就消失。</li>
+</ul>
+<h3 id="3-2-成员变量（即类的属性）"><a href="#3-2-成员变量（即类的属性）" class="headerlink" title="3.2 成员变量（即类的属性）"></a>3.2 成员变量（即类的属性）</h3><ul>
 <li>成员变量是定义在类中，也可以叫类的属性。</li>
 <li>作用范围：在整个类中</li>
 <li>存储位置：堆内存</li>
