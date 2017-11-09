@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title><![CDATA[Java面试题]]></title>
+      <url>/2017/11/09/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h2 id="1-Java-基础部分"><a href="#1-Java-基础部分" class="headerlink" title="1. Java 基础部分"></a>1. Java 基础部分</h2><blockquote>
+<p>基础部分的顺序：基本语法，类相关的语法，内部类的语法，继承相关的语法，异常的语法，线程的语法，集合的语法，io 的语法，虚拟机方面的语法。</p>
+</blockquote>
+<h3 id="1-一个”-java”源文件中是否可以包括多个类（不是内部类）？有什么限制？"><a href="#1-一个”-java”源文件中是否可以包括多个类（不是内部类）？有什么限制？" class="headerlink" title="1. 一个”.java”源文件中是否可以包括多个类（不是内部类）？有什么限制？"></a>1. 一个”.java”源文件中是否可以包括多个类（不是内部类）？有什么限制？</h3> <font color="#90caaf">可以有多个类，但只能有一个public的类，并且public的类名必须与文件名相一致。</font>
+
+<h3 id="2-Java有没有goto"><a href="#2-Java有没有goto" class="headerlink" title="2. Java有没有goto?"></a>2. Java有没有goto?</h3> <font color="#90caaf">java中的保留字，现在没有在java中使用。跳出循环用的</font>
+
+<h3 id="3-说说-amp-和-amp-amp-的区别。"><a href="#3-说说-amp-和-amp-amp-的区别。" class="headerlink" title="3. 说说&amp;和&amp;&amp;的区别。"></a>3. 说说&amp;和&amp;&amp;的区别。</h3> <font color="#90caaf">java中的保留字，现在没有在java中使用。跳出循环用的</font>
+
+<h3 id="4-switch语句能否作用在byte上，能否作用在long上，能否作用在String上"><a href="#4-switch语句能否作用在byte上，能否作用在long上，能否作用在String上" class="headerlink" title="4. switch语句能否作用在byte上，能否作用在long上，能否作用在String上?"></a>4. switch语句能否作用在byte上，能否作用在long上，能否作用在String上?</h3> <font color="#90caaf">在switch（expr1）中，expr1只能是一个整数表达式或者String或者枚举常量（更大字体），整数表达式可以是int基本类型或Integer包装类型，由于，byte,short,char都可以隐含转换为int，所以，这些类型以及这些类型的包装类型也是可以的。显然，long类型不符合switch的语法规定，并且不能被隐式转换成int类型，所以，它们不能作用于swtich语句中。</font>
+
+<h3 id="5-short-s1-1-s1-s1-1-有什么错-short-s1-1-s1-1-有什么错"><a href="#5-short-s1-1-s1-s1-1-有什么错-short-s1-1-s1-1-有什么错" class="headerlink" title="5 .short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?"></a>5 .short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?</h3> <font color="#90caaf">对于short s1 = 1; s1 = s1 + 1; 由于s1+1运算时会自动提升表达式的类型，所以结果是int型，再赋值给short类型s1时，编译器将报告需要强制转换类型的错误。<br><br>对于short s1 = 1; s1 += 1;由于 += 是java语言规定的运算符，java编译器会对它进行特殊处理，因此可以正确编译。<br></font>
+
+<h3 id="6-char型变量中能不能存贮一个中文汉字-为什么"><a href="#6-char型变量中能不能存贮一个中文汉字-为什么" class="headerlink" title="6. char型变量中能不能存贮一个中文汉字?为什么?"></a>6. char型变量中能不能存贮一个中文汉字?为什么?</h3><font color="#90caaf">char型变量是用来存储Unicode编码的字符的，unicode编码字符集中包含了汉字，所以，char型变量中当然可以存储汉字啦。不过，如果某个特殊的汉字没有被包含在unicode编码字符集中，那么，这个char型变量中就不能存储这个特殊汉字。补充说明：unicode编码占用两个字节，所以，char类型的变量也是占用两个字节。</font>
+
+<h3 id="7-用最有效率的方法算出2计算结果是8"><a href="#7-用最有效率的方法算出2计算结果是8" class="headerlink" title="7. 用最有效率的方法算出2计算结果是8?"></a>7. 用最有效率的方法算出2计算结果是8?</h3><font color="#90caaf">2 &lt;&lt; 3，<br>因为将一个数左移n位，就相当于乘以了2的n次方，那么，一个数乘以8只要将其左移3位即可，而位运算cpu直接支持的，效率最高，所以，最效率的方法是2 &lt;&lt; 3。<br></font>
+
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Java从零开始（二）]]></title>
       <url>/2017/11/06/Java%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B-1/</url>
       <content type="html"><![CDATA[<p>今天学习一下Java的三大特性</p>
@@ -46,7 +71,7 @@
     <entry>
       <title><![CDATA[Java从零开始(一)]]></title>
       <url>/2017/11/05/Java%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/</url>
-      <content type="html"><![CDATA[<p>最近一直不在学习状态，决定恶补Java 基础</p>
+      <content type="html"><![CDATA[<p>最近一直不在学习状态，决定恶补Java 基础 Java一直都是值传递。</p>
 <h2 id="1-什么是面向对象编程"><a href="#1-什么是面向对象编程" class="headerlink" title="1. 什么是面向对象编程"></a>1. 什么是面向对象编程</h2><p> 说到面向对象，就要提起面向过程，那么它们有什么区别呢？</p>
 <h3 id="1-1-面向过程"><a href="#1-1-面向过程" class="headerlink" title="1.1 面向过程"></a>1.1 面向过程</h3><p> 概念:分析解决问题的所需要的步骤，然后用函数一步一步的调用实现，就是把一个事务分解成一个个步骤。</p>
 <p>例如：把大象放入冰箱这件事情</p>
@@ -99,7 +124,7 @@
 </ul>
 <p>代码例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">class Car&#123;</div><div class="line">	</div><div class="line">	String color;</div><div class="line">	</div><div class="line">	double displacement;</div><div class="line">	</div><div class="line">	String brand;</div><div class="line">	</div><div class="line">	public void <span class="function"><span class="title">run</span></span>()&#123;</div><div class="line">		System.out.println(brand+<span class="string">"车在跑"</span>);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void <span class="function"><span class="title">introduce</span></span>()&#123;</div><div class="line">		System.out.println(<span class="string">"我是一款"</span>+brand+<span class="string">"的排量是"</span>+displacement+<span class="string">"L"</span>+color+<span class="string">"的车"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class TestCar&#123;</div><div class="line">	</div><div class="line">	public static void main(String[] args)&#123;</div><div class="line">		//在堆内存中创建了一个car的对象，但是在栈内存中没有变量引用他。</div><div class="line">		new Car().brand = <span class="string">"兰博基尼"</span>;</div><div class="line">		//又在内存中创建了一个匿名对象;</div><div class="line">		new Car().color = <span class="string">"黄色"</span>;</div><div class="line">		new Car().introduce();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
+<h2 id="4-常量和变量"><a href="#4-常量和变量" class="headerlink" title="4. 常量和变量"></a>4. 常量和变量</h2>]]></content>
       
         <categories>
             
@@ -192,23 +217,6 @@
             
         </categories>
         
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2017/10/31/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br><a id="more"></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-      
         
     </entry>
     
