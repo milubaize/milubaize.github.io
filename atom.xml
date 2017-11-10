@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-05T10:56:26.359Z</updated>
+  <updated>2017-11-10T10:50:41.475Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>学习Markdown</title>
-    <link href="http://yoursite.com/2017/10/31/MyBlog/"/>
-    <id>http://yoursite.com/2017/10/31/MyBlog/</id>
-    <published>2017-10-31T13:41:55.000Z</published>
-    <updated>2017-11-05T10:56:26.359Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h1><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字。<br><a id="more"></a></p><h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p><p>而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：</p><p>代码：</p><pre><code># 第一级标题   `&lt;h1&gt;`## 第二级标题    `&lt;h2&gt;`### 第三级标题     `&lt;h3&gt;`</code></pre><p> 效果：</p><blockquote><h1 id="第一级标题-lt-h1-gt"><a href="#第一级标题-lt-h1-gt" class="headerlink" title="第一级标题   &lt;h1&gt;"></a>第一级标题   <code>&lt;h1&gt;</code></h1><h2 id="第二级标题-lt-h2-gt"><a href="#第二级标题-lt-h2-gt" class="headerlink" title="第二级标题   &lt;h2&gt;"></a>第二级标题   <code>&lt;h2&gt;</code></h2><h3 id="第三级标题-lt-h3-gt"><a href="#第三级标题-lt-h3-gt" class="headerlink" title="第三级标题    &lt;h3&gt;"></a>第三级标题    <code>&lt;h3&gt;</code></h3></blockquote><h2 id="二-引用"><a href="#二-引用" class="headerlink" title="二.引用"></a>二.引用</h2><p>引用需要在被引用的文本前加上&gt;符号。</p><p>代码：</p><pre><code>&gt; 第一行   &gt; 第二行    &gt; 第三行     </code></pre><p> 效果：</p><blockquote><p> 第一行  </p><p> 第二行   </p><p> 第三行   </p></blockquote><h3 id="引用的多层嵌套"><a href="#引用的多层嵌套" class="headerlink" title="引用的多层嵌套"></a>引用的多层嵌套</h3><p>代码：</p><pre><code>&gt;&gt;&gt; 请问 Markdwon 怎么用啊？  &gt;&gt;&gt;&gt; 自己看百度！ &gt;&gt; 第一行     </code></pre><p><font color="#F08080" size="2">注：此处代码部分加\转义可以让符号原样显示，不被解析成对应的markdown语法</font>  <br><br>效果：</p><blockquote><blockquote><blockquote><p>请问 Markdwon 怎么用啊？  </p></blockquote><p>自己看百度！ </p></blockquote><p>不会啊！ </p></blockquote><h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用 \<figure class="highlight bash"><figcaption><span>.....```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">  </div><div class="line">效果</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo d -g</div></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;什么是-Markdown&quot;&gt;&lt;a href=&quot;#什么是-Markdown&quot; class=&quot;headerlink&quot; title=&quot;什么是 Markdown&quot;&gt;&lt;/a&gt;什么是 Markdown&lt;/h1&gt;&lt;p&gt;Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，&lt;strong&gt;粗体&lt;/strong&gt; 或者 &lt;em&gt;斜体&lt;/em&gt; 某些文字。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Markdown基础" scheme="http://yoursite.com/categories/Markdown%E5%9F%BA%E7%A1%80/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Java面试题</title>
@@ -130,6 +110,26 @@
     </summary>
     
       <category term="Hexo主题相关" scheme="http://yoursite.com/categories/Hexo%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习Markdown</title>
+    <link href="http://yoursite.com/2015/10/31/MyBlog/"/>
+    <id>http://yoursite.com/2015/10/31/MyBlog/</id>
+    <published>2015-10-31T13:41:55.000Z</published>
+    <updated>2017-11-10T10:52:15.878Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h1><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字。<br><a id="more"></a></p><h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p><p>而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加 # 即可，标题字号相应降低。例如：</p><p>代码：</p><pre><code># 第一级标题   `&lt;h1&gt;`## 第二级标题    `&lt;h2&gt;`### 第三级标题     `&lt;h3&gt;`</code></pre><p> 效果：</p><blockquote><h1 id="第一级标题-lt-h1-gt"><a href="#第一级标题-lt-h1-gt" class="headerlink" title="第一级标题   &lt;h1&gt;"></a>第一级标题   <code>&lt;h1&gt;</code></h1><h2 id="第二级标题-lt-h2-gt"><a href="#第二级标题-lt-h2-gt" class="headerlink" title="第二级标题   &lt;h2&gt;"></a>第二级标题   <code>&lt;h2&gt;</code></h2><h3 id="第三级标题-lt-h3-gt"><a href="#第三级标题-lt-h3-gt" class="headerlink" title="第三级标题    &lt;h3&gt;"></a>第三级标题    <code>&lt;h3&gt;</code></h3></blockquote><h2 id="二-引用"><a href="#二-引用" class="headerlink" title="二.引用"></a>二.引用</h2><p>引用需要在被引用的文本前加上&gt;符号。</p><p>代码：</p><pre><code>&gt; 第一行   &gt; 第二行    &gt; 第三行     </code></pre><p> 效果：</p><blockquote><p> 第一行  </p><p> 第二行   </p><p> 第三行   </p></blockquote><h3 id="引用的多层嵌套"><a href="#引用的多层嵌套" class="headerlink" title="引用的多层嵌套"></a>引用的多层嵌套</h3><p>代码：</p><pre><code>&gt;&gt;&gt; 请问 Markdwon 怎么用啊？  &gt;&gt;&gt;&gt; 自己看百度！ &gt;&gt; 第一行     </code></pre><p><font color="#F08080" size="2">注：此处代码部分加\转义可以让符号原样显示，不被解析成对应的markdown语法</font>  <br><br>效果：</p><blockquote><blockquote><blockquote><p>请问 Markdwon 怎么用啊？  </p></blockquote><p>自己看百度！ </p></blockquote><p>不会啊！ </p></blockquote><h3 id="代码高亮着色"><a href="#代码高亮着色" class="headerlink" title="代码高亮着色"></a>代码高亮着色</h3><p>使用 \<figure class="highlight bash"><figcaption><span>.....```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">  </div><div class="line">效果</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo d -g</div></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是-Markdown&quot;&gt;&lt;a href=&quot;#什么是-Markdown&quot; class=&quot;headerlink&quot; title=&quot;什么是 Markdown&quot;&gt;&lt;/a&gt;什么是 Markdown&lt;/h1&gt;&lt;p&gt;Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，&lt;strong&gt;粗体&lt;/strong&gt; 或者 &lt;em&gt;斜体&lt;/em&gt; 某些文字。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Markdown基础" scheme="http://yoursite.com/categories/Markdown%E5%9F%BA%E7%A1%80/"/>
     
     
   </entry>
