@@ -12,7 +12,7 @@
 
 <h3 id="2-Java有没有goto"><a href="#2-Java有没有goto" class="headerlink" title="2. Java有没有goto?"></a>2. Java有没有goto?</h3> <font color="#90caaf">java中的保留字，现在没有在java中使用。跳出循环用的</font>
 
-<h3 id="3-说说-amp-和-amp-amp-的区别。"><a href="#3-说说-amp-和-amp-amp-的区别。" class="headerlink" title="3. 说说&amp;和&amp;&amp;的区别。"></a>3. 说说&amp;和&amp;&amp;的区别。</h3> <font color="#90caaf">java中的保留字，现在没有在java中使用。跳出循环用的</font>
+<h3 id="3-说说-amp-和-amp-amp-的区别。"><a href="#3-说说-amp-和-amp-amp-的区别。" class="headerlink" title="3. 说说&amp;和&amp;&amp;的区别。"></a>3. 说说&amp;和&amp;&amp;的区别。</h3> <font color="#90caaf">&amp;和&amp;&amp;都可以用作逻辑与的运算符，表示逻辑与（and），当运算符两边的表达式的结果都为true时，整个运算结果才为true，否则，只要有一方为false，则结果为false。<br>&amp;&amp;还具有短路的功能，即如果第一个表达式为false，则不再计算第二个表达式，例如，对于if(str != null &amp;&amp; !str.equals(“”))表达式，当str为null时，后面的表达式不会执行，所以不会出现NullPointerException如果将&amp;&amp;改为&amp;，则会抛出NullPointerException异常。If(x==33 &amp; ++y&gt;0) y会增长，If(x==33 &amp;&amp; ++y&gt;0)不会增长<br></font>
 
 <h3 id="4-switch语句能否作用在byte上，能否作用在long上，能否作用在String上"><a href="#4-switch语句能否作用在byte上，能否作用在long上，能否作用在String上" class="headerlink" title="4. switch语句能否作用在byte上，能否作用在long上，能否作用在String上?"></a>4. switch语句能否作用在byte上，能否作用在long上，能否作用在String上?</h3> <font color="#90caaf">在switch（expr1）中，expr1只能是一个整数表达式或者String或者枚举常量（更大字体），整数表达式可以是int基本类型或Integer包装类型，由于，byte,short,char都可以隐含转换为int，所以，这些类型以及这些类型的包装类型也是可以的。显然，long类型不符合switch的语法规定，并且不能被隐式转换成int类型，所以，它们不能作用于swtich语句中。</font>
 
@@ -209,7 +209,16 @@
 </ul>
 <p>代码例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">class Car&#123;</div><div class="line">	</div><div class="line">	String color;</div><div class="line">	</div><div class="line">	double displacement;</div><div class="line">	</div><div class="line">	String brand;</div><div class="line">	</div><div class="line">	public void <span class="function"><span class="title">run</span></span>()&#123;</div><div class="line">		System.out.println(brand+<span class="string">"车在跑"</span>);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void <span class="function"><span class="title">introduce</span></span>()&#123;</div><div class="line">		System.out.println(<span class="string">"我是一款"</span>+brand+<span class="string">"的排量是"</span>+displacement+<span class="string">"L"</span>+color+<span class="string">"的车"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class TestCar&#123;</div><div class="line">	</div><div class="line">	public static void main(String[] args)&#123;</div><div class="line">		//在堆内存中创建了一个car的对象，但是在栈内存中没有变量引用他。</div><div class="line">		new Car().brand = <span class="string">"兰博基尼"</span>;</div><div class="line">		//又在内存中创建了一个匿名对象;</div><div class="line">		new Car().color = <span class="string">"黄色"</span>;</div><div class="line">		new Car().introduce();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="4-常量和变量"><a href="#4-常量和变量" class="headerlink" title="4. 常量和变量"></a>4. 常量和变量</h2>]]></content>
+<h2 id="4-常量和变量"><a href="#4-常量和变量" class="headerlink" title="4. 常量和变量"></a>4. 常量和变量</h2><ul>
+<li><p>开辟内存空间（JVM）</p>
+</li>
+<li><p>提取数据（.class）</p>
+</li>
+<li><p>cpu调度运行</p>
+</li>
+</ul>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>在程序运行的过程中存储可以变化的数据的量（内存的空）就叫做变量。</p>
+]]></content>
       
         <categories>
             
